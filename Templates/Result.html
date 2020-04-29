@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result of Customer Exit Prediction</title>
+</head>
+<body>
+
+    <h1 align="center">Banking Customer Exit Prediction Result</h1>
+    <p align="center">Based on the inputs below is the prediction on this customer</p>
+
+	{% if prediction == 1%}
+	<h2 style="color:red; text-align: center">Customer will exit the bank in Future</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue; text-align: center">Customer will not exit the bank in Future</h2>
+	{% endif %}
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Deployment Tutorial</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<body>
+<form action="{{ url_for('customerExitPrediction')}}" method="POST">
+    <div class="container" align="center">
+        <h1><Customer Exit Prediction</h1>
+        <p>Please fill the Customer Information to know about the customer exit prediction</p>
+        <hr>
+        <label for="credit score"> Enter Credit Score: </label>
+    	<input type="text" name="credit score" placeholder="credit score" required="required" /><br>
+        <label for="age"> Enter Age: </label>
+    	<input type="text" name="age" placeholder="age" required="required" /><br>
+        <label for="tenure"> Enter Tenure with bank: </label>
+    	<input type="text" name="tenure" placeholder="tenure" required="required" /><br>
+        <label for="balance"> Enter Balance with bank: </label>
+    	<input type="text" name="balance" placeholder="balance" required="required" /><br>
+        <label for="NumOfProducts"> No of Products with bank: </label>
+    	<input type="text" name="NumOfProducts" placeholder="NumOfProducts" required="required" /><br>
+        <label for="HasCrCard"> No of Products with bank: </label>
+    	<input type="text" name="HasCrCard" placeholder="Provide 1 if yes or 0" required="required" /><br>
+        <label for="IsActiveMember"> Is Active member: </label>
+    	<input type="text" name="IsActiveMember" placeholder="Provide 1 if yes or 0" required="required" /><br>
+        <label for="EstimatedSalary"> Estimated salary of the customer: </label>
+    	<input type="text" name="EstimatedSalary" placeholder="EstimatedSalary" required="required" /><br>
+        <label for="Geography_Germany"> Wheather geography Germany: </label>
+    	<input type="text" name="Geography_Germany" placeholder="Provide 1 if Germany else 0" required="required" /><br>
+        <label for="Geography_Spain"> Weather geography Spain: </label>
+    	<input type="text" name="Geography_Spain" placeholder="Provide 1 if Spain else 0" required="required" /><br>
+        <label for="Gernder"> Provide gender of customer: </label>
+    	<input type="text" name="Gender" placeholder="Provide 1 if Male else 0" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </div>
+</form>
+
+</body>
+</html>

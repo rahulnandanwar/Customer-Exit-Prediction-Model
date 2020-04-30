@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder='Templates')
 
 @app.route('/')
 def Home():
-    return render_template('Home.html')
+    return render_template('home.html')
 
 @app.route('/Result', methods=['POST'])
 def customerExitPrediction():
